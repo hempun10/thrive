@@ -3,25 +3,20 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --head-font: "Clash Display", sans-serif;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.hero_heading {
+  font-family: var(--head-font);
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.hero-btn {
+  @apply font-sans bg-primary flex gap-2 hover:gap-3 transition-all hover:bg-primary rounded-full mx-auto lg:m-0 w-[50%] sm:w-[20%];
+}
+.hero_heading {
+  @apply sm:text-[76px] text-[70px]  leading-[79px]   text-white font-[600] tracking-wide;
+}
+.text_content {
+  @apply p-8 lg:w-[70%] flex justify-evenly flex-col text-center lg:text-left;
+}
+.backdrop {
+  @apply bg-BtnColor/80 absolute h-[100%] w-[100%] -z-10;
 }

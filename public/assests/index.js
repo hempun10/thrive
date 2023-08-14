@@ -1,0 +1,6 @@
+export { default as CloudDev } from './cloud-icon.png'
+export { default as CyberSecurity } from './cyber.png'
+export { default as ApplicationDev } from './application.png'
+export { default as Automation } from './automation.png'
+export { default as UIUX } from './ui-ux.png'
+export { default as SoftwareDev } from './software.png'
