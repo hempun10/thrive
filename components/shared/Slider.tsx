@@ -56,7 +56,9 @@ export default function Slider() {
                 {slide.heading} <br />
                 <span className=" text-primary">{slide.spanText} </span>
               </h1>
-              <p className=" font-sans text-xl text-white">{slide.para}</p>
+              <p className=" font-sans text-base sm:text-xl text-white">
+                {slide.para}
+              </p>
               <Button variant={"default"} className="hero-btn ">
                 {slide.btnText}
                 <AiOutlineArrowRight size={15} />

@@ -14,8 +14,7 @@ body {
 
 .swiper-slide {
   display: flex;
-
-  height: 86vh;
+  height: 100vh;
 }
 
 .swiper-slide img {

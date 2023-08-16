@@ -14,6 +14,7 @@ const head_font = Playfair_Display({
 });
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
+import ScrollBarTracker from "@/components/shared/ScrollBarTracker";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -35,6 +36,7 @@ export default function RootLayout({
       </head>
       <body className={root_font.variable}>
         <Navbar />
+        <ScrollBarTracker />
         <main>{children}</main>
       </body>
     </html>

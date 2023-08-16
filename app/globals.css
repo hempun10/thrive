@@ -5,18 +5,28 @@
 :root {
   --head-font: "Clash Display", sans-serif;
 }
-.hero_heading {
+.hero_heading,
+.how_we_work_text {
   font-family: var(--head-font);
 }
 .hero-btn {
   @apply font-sans bg-primary flex gap-2 hover:gap-3 transition-all hover:bg-primary rounded-full mx-auto lg:m-0 w-[50%] sm:w-[20%];
 }
 .hero_heading {
-  @apply sm:text-[76px] text-[70px]  leading-[79px]   text-white font-[600] tracking-wide;
+  @apply sm:text-[76px] text-[58px]  leading-[59px]   text-white font-[600] tracking-wide;
 }
 .text_content {
-  @apply p-8 lg:w-[70%] flex justify-evenly flex-col text-center lg:text-left;
+  @apply pt-[7rem] lg:w-[70%] flex justify-evenly flex-col text-center lg:text-left pl-[2rem];
 }
 .backdrop {
   @apply bg-BtnColor/80 absolute h-[100%] w-[100%] -z-10;
+}
+.progress-bar {
+  @apply fixed top-[88px] left-0 right-0 h-1 bg-primary origin-[0%] z-20;
+}
+.testominal_text {
+  @apply top-[30%] left-[7%] absolute lg:text-3xl md:text-2xl text-xl font-sans text-center;
+}
+.custom_avatar_wrapper {
+  @apply font-sans font-[300] flex flex-col justify-center items-center mt-7 sm:mt-0;
 }

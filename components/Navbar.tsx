@@ -6,7 +6,7 @@ import { NavActions } from "./Navbar/nav-actions";
 
 const Navbar = () => {
   return (
-    <nav className=" flex bg-white shadow-lg justify-around items-center py-1">
+    <nav className=" flex bg-white shadow-xl justify-around items-center py-1 fixed z-50 w-full">
       <div className="logo_container">
         <Image
           src={"/assests/logo.svg"}

@@ -79,8 +79,8 @@ export function MainNav({ className, isMobileScreen = false }: Props) {
     <NavigationMenu className={cn(" font-sans ", className)}>
       <NavigationMenuList
         className={cn(
-          "text-textColor text-2xl",
-          isMobileScreen && " flex-col text-[2rem] text-left"
+          "text-textColor lg:text-xl text-base",
+          isMobileScreen && " flex-col text-3xl leading-9  text-left"
         )}
       >
         <NavigationMenuItem>
@@ -102,7 +102,7 @@ export function MainNav({ className, isMobileScreen = false }: Props) {
           ) : (
             <>
               <NavigationMenuTrigger>Services</NavigationMenuTrigger>
-              <NavigationMenuContent>
+              <NavigationMenuContent className=" z-20">
                 <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                   {components.map((component, index) => (
                     <div className=" flex items-center hover:bg-slate-100 rounded-md p-1">
